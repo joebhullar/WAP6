@@ -1,0 +1,26 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        User Information
+    </div>
+    <div class="panel-body">
+        <div class="container-fluid">
+
+            <table border="1" class="table striped">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>userId</th>
+                    <th>title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let album of albums">
+                    <td><a [routerLink]="['/AlbumDetail', album.id]" >{{album.id}}</a></td>
+                    <td>{{album.userId}}</td>
+                    <td>{{album.title}}</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+      </div>
+    </div>

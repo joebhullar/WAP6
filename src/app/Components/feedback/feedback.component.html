@@ -1,0 +1,22 @@
+<h1>Feedback Service</h1>
+<table border="1" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Reviews</th>
+        <th>By</th>
+        <th>Date</th>
+      </tr>
+  
+    </thead>
+      <tbody>
+        <tr *ngFor="let feed of feedbacks">
+          <td> {{feed.feedbackId}}</td>
+          <td>{{feed.feedbackGiven}}</td>
+  
+          <td>{{feed.feedbackBy}}</td>
+  
+          <td>{{feed.feedbackDate}}</td>  
+        </tr>
+      </tbody>
+  </table>

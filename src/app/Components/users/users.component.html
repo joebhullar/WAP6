@@ -1,0 +1,40 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        User Information
+    </div>
+    <div class="panel-body">
+        <div class="container-fluid">
+
+            <table border="1" class="table table-striped">
+              <thead>
+                <tr>
+                    <th>User Id</th>
+                    <th>name</th>
+                    <th>username</th>
+                    <th>email</th>
+                    <th>street</th>
+                    <th>suite</th>
+                    <th>city</th>
+                    <th>zipcode</th>
+                    <th>lat</th>
+                    <th>long</th>
+                </tr>
+             </thead>
+             <tbody>   
+                <tr *ngFor="let user of users">
+                    <td> <a [routerLink]="['/UserDetail', user.id]">{{user.id}}</a></td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.username}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.address.street}}</td>
+                    <td>{{user.address.suite}}</td>
+                    <td>{{user.address.city}}</td>
+                    <td>{{user.address.zipcode}}</td>
+                    <td>{{user.address.geo.lat}}</td>
+                    <td>{{user.address.geo.lng}}</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+</div>

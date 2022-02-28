@@ -1,0 +1,35 @@
+<p>products works!</p>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Product Information
+    </div>
+    <div class="panel-body">
+        <div class="container-fluid">
+            <table border="1" class="table table-striped" > 
+                <thead>
+                    <tr>
+                        <th>productId</th>
+                        <th> img [src]= 'product.imageUrl'</th>
+                        <th>productCode</th>
+                        <th>productName</th>
+                        <th>price</th>
+                        <th>starRating</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr *ngFor="let product of products">
+                        <td style="text-align:center;"> <a [routerLink]="['/ProductDetail', product.productId]" [queryParams]="{name:product.productName, img:product.imageUrl, price:product.price}"> {{product.productId}}</a></td>
+                        <td> <img [src]='product.imageUrl' [style.width.px]='imageWidth' [style.margin.px]='imageMargin' />     {{product.imageUrl}}</td>
+                        <td>{{product.productCode}}</td>
+                        <td>{{product.productName}}</td>
+                        <td>{{product.price}}</td>
+                        <td style="text-align:center;">{{product.starRating}}</td>
+                    </tr>
+                </tbody>   
+            </table>
+        </div>
+       </div> 
+    </div>
+      
+
+

@@ -1,0 +1,28 @@
+<h1>Users Detail Table</h1>
+<table border="1" class="table striped">
+    <tr>
+        <th>User Id</th>
+        <th>name</th>
+        <th>username</th>
+        <th>email</th>
+        <th>street</th>
+        <th>suite</th>
+        <th>city</th>
+        <th>zipcode</th>
+        <th>lat</th>
+        <th>long</th>
+    </tr>
+    
+    <tr>
+        <td> {{user.id}}  </td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.address.street}}</td>
+        <td>{{user.address.suite}}</td>
+        <td>{{user.address.city}}</td>
+        <td>{{user.address.zipcode}}</td>
+        <td>{{user.address.geo.lat}}</td>
+        <td>{{user.address.geo.lng}}</td>
+    </tr>
+</table>

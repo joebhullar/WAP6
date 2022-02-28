@@ -1,0 +1,56 @@
+<!-- <b appChangeStyle>{{todayDate}}</b> -->
+<hr />
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">Contact Information</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <h1 [style.color]="'brown'" [style.font-style]="'italic'" [style.font-weight]="'bold'">Joe Bhullar - Software Engineer</h1>
+                    <h3><b>Contact Information</b></h3>
+                    <h5> <b>Joe Bhullar</b></h5>
+                    <h5><b>Angular & C# .NET Developer</b></h5>
+                    <h5><b>Software Engineering blog <a href="https://joebhullar.com/" target="_blank">https://joebhullar.com/</a> </b></h5>
+                    <h5><b>Cell: 555-555-5555</b></h5>
+
+                </tr>
+            </thead>
+
+        </table>
+
+        <div>
+            My background is in Software Development, a Bachelor’s of Science Degree in Electrical Engineering from the Unversity of Calgary, <br/> 
+            ESP8266 Microcontrollers, & in 3D-Printing. I also have experience in High-Voltage Transmission & Distribution.<br/><br/>
+
+            <b [style.color]="'black'"  [style.font-weight]="'bold'">
+                Thanks and Regards, <br />
+                Joe Bhullar<br />
+                Software Engineer<br />
+                <a href="https://joebhullar.com/" target="_blank">https://joebhullar.com/</a><br />
+                
+            </b>
+            <br />
+
+
+        </div>
+    </div>
+</div>
+
+<div class="text-center">
+    <h2 class="h1-responsive font-weight-bold"><b [style.color]="'brown'" [style.font-style]="'italic'" [style.font-weight]="'bold'">Technologies I've Worked With :</b></h2>
+    <h5 class="grey-text w-responsive mx-auto"><b [style.color]="'brown'" [style.font-style]="'italic'" [style.font-weight]="'bold'">Following are some of the Technologies I've worked with</b></h5>
+    <div class="container-fluid">
+        <div class="col-lg-3 col-md-6 mb-lg-0 mb-5" *ngFor="let con of contacts">
+            <div class="mx-auto">
+                <img [src]='con.imageUrl' class="img-circle">
+            </div>
+            <h4 class="font-weight-bold mt-4 mb-3">{{con.Name}}</h4>
+            <p class="text-uppercase text-primary"><strong>{{con.Designation}}</strong></p>
+            <!-- <p class="grey-text">{{con.Phone}}</p> -->
+           
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+[
+  {"id":1, "imageUrl":"./assets/Contact_Images/NetCore_JPG.jpg", "Name":"Angular", "Designation":"Front-End Language", "fUrl":"#", "tUrl":"#", "lUrl":"#" },
+  {"id":2, "imageUrl":"./assets/Contact_Images/Eleazer.jpeg", "Name":"C# .NET", "Designation":"Back-End Language & Framework", "fUrl":"https://twitter.com/eleazerpatil", "tUrl":"https://twitter.com/eleazerpatil", "lUrl":"https://twitter.com/eleazerpatil" },
+  {"id":3, "imageUrl":"./assets/Contact_Images/Sourav.jpeg", "Name":"ESP8266", "Designation":"Microcontrollers", "fUrl":"#", "tUrl":"#", "lUrl":"#" },
+  {"id":4, "imageUrl":"./assets/Contact_Images/Veda.jpeg", "Name":"SAP", "Designation":"Corporate IT ERP Software", "fUrl":"#", "tUrl":"#", "lUrl":"#" }
+]

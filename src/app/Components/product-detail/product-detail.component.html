@@ -1,0 +1,50 @@
+<p>products works!</p>
+<table border="1" > 
+    <thead>
+        <tr>
+            <th>productId</th>
+            <th> img [src]= 'product.imageUrl'</th>
+            <th>productCode</th>
+            <th>productName</th>
+            <th>price</th>
+            <th>starRating</th>
+        </tr>
+    </thead> 
+    <tbody>
+        <tr>
+            <td> {{product?.productId}}<td>
+            <td> <img [src]='product?.imageUrl' [style.width.px]='imageWidth' [style.margin.px]='imageMargin' />     {{product?.imageUrl}}</td>
+            <td>{{product?.productCode}}</td>
+            <td>{{product?.productName}}</td>
+            <td>{{product?.price}}</td>
+            <td style="text-align:center;">{{product?.starRating}}</td>
+        </tr>
+    </tbody>   
+</table>
+<!-- 
+
+ <div class="panel panel-primary">
+    <div class="panel-heading">
+        {{title}} {{productName}}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <img [src]="image" class="img-responsive img-thumbnail"/>
+            </div>
+            <div class="col-md-9">
+                <div>
+                    <h1>{{productName}}</h1>
+                    <hr>
+                    <h2>{{desc}}</h2>
+                    <hr class="bottom">
+                    <h1>Best Price : {{price | currency:'INR':'symbol-narrow'}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-footer">
+        <a class="btn btn-default" (click)="onBackPress()">
+            <span class="glyphicon glyphicon-chevron-left"></span>Back
+        </a>
+    </div> -->
